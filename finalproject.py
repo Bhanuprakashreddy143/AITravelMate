@@ -16,8 +16,8 @@ st.set_page_config(
 )
 
 # --- API KEYS (Replace with your keys or use st.secrets) ---
-SERPAPI_KEY = "7b16abd42c759d96f95b6e28f6d0ad199b437757867e0cd20ddc4a4f975344ce"
-GOOGLE_API_KEY = "AIzaSyDiGlPvCPGR0RyPW671Vjnmpj3-rp97L8g"
+SERPAPI_KEY = ""
+GOOGLE_API_KEY = ""
 
 if SERPAPI_KEY == "YOUR_SERPAPI_KEY" or GOOGLE_API_KEY == "YOUR_GOOGLE_API_KEY":
     st.error("🚨 Please replace 'YOUR_SERPAPI_KEY' and 'YOUR_GOOGLE_API_KEY' with your actual API keys.")
@@ -331,4 +331,5 @@ else:
                 <p>Humidity: {current.get('humidity')} | Wind: {current.get('wind')}</p>
             </div>""", unsafe_allow_html=True)
         else:
+
             st.warning("Could not retrieve weather information at this time.")
